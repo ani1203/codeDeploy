@@ -6,6 +6,8 @@ blinker==1.4
 certifi==2018.1.18
 cffi==1.12.2
 chardet==3.0.4
+channels==2.1.7
+channels-redis==2.3.3
 click==6.7
 colorama==0.3.7
 configobj==5.0.6
