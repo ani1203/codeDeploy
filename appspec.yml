@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /chatApp
-    destination: /home/ubuntu/cds-demo/
+  - source: /
+    destination: /home/ubuntu/codeDeploy/
 permissions:
-  - object: /home/ubuntu/cds-demo
+  - object: /home/ubuntu/codeDeploy
     owner: ubuntu
     group: ubuntu
 hooks:
