@@ -4,7 +4,7 @@ After=network.target
 [Service]
 User=ubuntu
 Group=www-data
-WorkingDirectory=/home/ubuntu/cds-demo/chatApp
-ExecStart=/home/ubuntu/venv/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/cds-demo/chatApp/chatApp.sock chatApp.wsgi:application
+WorkingDirectory=/home/ubuntu/codeDeploy/learnDjango
+ExecStart=/home/ubuntu/venv/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/codeDeploy/learnDjango/learnDjango.sock learnDjango.wsgi:application
 [Install]
 WantedBy=multi-user.target
