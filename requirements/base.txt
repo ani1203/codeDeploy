@@ -25,4 +25,6 @@ txaio==18.8.1
 zope.interface==4.6.0
 redis==3.1.0
 websockets==7.0
+gunicorn==19.9.0
+
 
