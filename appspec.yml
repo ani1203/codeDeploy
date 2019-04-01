@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /chatApp
+    destination: /home/ubuntu/cds-demo/
+permissions:
+  - object: /home/ubuntu/cds-demo
+    owner: ubuntu
+    group: ubuntu
+hooks:
+  BeforeInstall:
+    - location: scripts/remove.sh
+      timeout: 300
+      runas: root
+      mode: 777
+  AfterInstall:
+    - location: scripts/dependencies.sh
+      timeout: 300
+      runas: ubuntu
