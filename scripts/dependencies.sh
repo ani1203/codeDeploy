@@ -16,3 +16,4 @@ sudo ln -s /etc/nginx/sites-available/learnDjango /etc/nginx/sites-enabled
 sudo nginx -t
 sudo rm /etc/nginx/sites-enabled/default
 sudo service nginx restart
+sudo service gunicorn restart 
